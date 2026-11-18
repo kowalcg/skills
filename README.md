@@ -1,6 +1,6 @@
 # Free Claude Code skills
 
-Skills I give away, from [gregkowalczyk.com](https://gregkowalczyk.com/projects/). Each one runs
+Skills I give away, from [gregkowalczyk.com](https://www.gregkowalczyk.com/projects/). Each one runs
 inside [Claude Code](https://claude.com/claude-code). MIT licence, use them however you like.
 
 | Skill | What it does | Version |
@@ -56,4 +56,4 @@ install them the first time it needs them), and try it:
 
 ---
 
-Questions or ideas: [gregkowalczyk.com/contact](https://gregkowalczyk.com/contact/).
+Questions or ideas: [gregkowalczyk.com/contact](https://www.gregkowalczyk.com/contact/).

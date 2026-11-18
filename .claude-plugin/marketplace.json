@@ -2,7 +2,7 @@
   "name": "greg-skills",
   "owner": {
     "name": "Greg Kowalczyk",
-    "url": "https://gregkowalczyk.com"
+    "url": "https://www.gregkowalczyk.com"
   },
   "metadata": {
     "description": "Free Claude Code skills from Greg Kowalczyk, shared at the AI for Business meetups in Hamilton and Oakville, Ontario.",
@@ -16,8 +16,8 @@
       "source": "./",
       "strict": false,
       "skills": ["./skills/video-to-skill"],
-      "author": { "name": "Greg Kowalczyk", "url": "https://gregkowalczyk.com" },
-      "homepage": "https://gregkowalczyk.com/skills/video-to-skill/",
+      "author": { "name": "Greg Kowalczyk", "url": "https://www.gregkowalczyk.com" },
+      "homepage": "https://www.gregkowalczyk.com/skills/video-to-skill/",
       "license": "MIT",
       "keywords": ["youtube", "podcast", "transcript", "guide", "learning", "skill-builder"]
     }
