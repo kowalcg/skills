@@ -56,4 +56,7 @@ install them the first time it needs them), and try it:
 
 ---
 
+**Want the next skill when it's out?** Leave your name and email on the
+[video-to-skill page](https://www.gregkowalczyk.com/skills/video-to-skill/) and I'll let you know.
+
 Questions or ideas: [gregkowalczyk.com/contact](https://www.gregkowalczyk.com/contact/).
