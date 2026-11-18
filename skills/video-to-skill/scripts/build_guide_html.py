@@ -107,6 +107,13 @@ def _mermaid_js():
     return open(MERMAID_CACHE).read()
 
 
+def _inside(base, rel):
+    """Resolve rel under base; None if it escapes the guide folder (../, absolute, symlink)."""
+    root = os.path.realpath(base)
+    fp = os.path.realpath(os.path.join(root, rel))
+    return fp if fp.startswith(root + os.sep) else None
+
+
 def build(md_path, out_path, title=None):
     import markdown
 
@@ -125,8 +132,8 @@ def build(md_path, out_path, title=None):
     # 2. inline local SVGs as data URIs
     def embed(m):
         alt, rel = m.group(1), m.group(2)
-        fp = os.path.join(base, rel)
-        if not os.path.exists(fp):
+        fp = _inside(base, rel)
+        if not fp or not os.path.exists(fp):
             return m.group(0)
         # An SVG with an embedded font can be >1 MB. If a same-named .png twin sits next to
         # it, use that when the SVG is heavy — the guide stays small.
@@ -145,8 +152,8 @@ def build(md_path, out_path, title=None):
     # 2b. inline video slide captures (raster) as compressed JPEG
     def embed_slide(m):
         alt, rel = m.group(1), m.group(2)
-        fp = os.path.join(base, rel)
-        if not os.path.exists(fp):
+        fp = _inside(base, rel)
+        if not fp or not os.path.exists(fp):
             return m.group(0)
         import io
         try:
